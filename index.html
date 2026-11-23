@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Complaint triage desk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E7ECEF;
+    --sheet: #FBFCFD;
+    --ink: #14233A;
+    --ink-soft: #52627A;
+    --rule: #C3CCD5;
+    --urgent: #B3361C;
+    --human: #A86A12;
+    --qa: #1D7266;
+    --focus: #2C5BD6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--paper); color: var(--ink);
+    font: 400 16px/1.5 "Public Sans", "Segoe UI", system-ui, sans-serif;
+    padding: 32px 16px 48px;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; }
+  header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 8px 24px; margin-bottom: 24px; }
+  h1 { font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; margin: 0; line-height: 1.1; }
+  header p { margin: 0; color: var(--ink-soft); max-width: 46ch; }
+  .grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 24px; align-items: start; }
+  @media (max-width: 860px) { .grid { grid-template-columns: 1fr; } }
+
+  .sheet { background: var(--sheet); border: 1px solid var(--rule); border-radius: 4px; padding: 24px; }
+  h2 { font-size: 1.125rem; font-weight: 600; margin: 0 0 16px; }
+  label, .field-name { display: block; font-weight: 600; font-size: 0.875rem; margin: 20px 0 6px; }
+  .hint { font-weight: 400; color: var(--ink-soft); }
+  textarea, select {
+    width: 100%; font: inherit; color: var(--ink); background: #fff;
+    border: 1px solid var(--rule); border-radius: 3px; padding: 10px 12px;
+  }
+  textarea { min-height: 128px; resize: vertical; }
+  :focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+  .samples { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip {
+    font: inherit; font-size: 0.875rem; color: var(--ink); background: transparent;
+    border: 1px solid var(--rule); border-radius: 999px; padding: 4px 12px; cursor: pointer;
+  }
+  .chip:hover { border-color: var(--ink); }
+
+  .photo { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .photo img { width: 88px; height: 88px; object-fit: cover; border: 1px solid var(--rule); border-radius: 3px; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 420px) { .row { grid-template-columns: 1fr; } }
+
+  .submit {
+    margin-top: 24px; width: 100%; font: inherit; font-weight: 600; color: #fff;
+    background: var(--ink); border: 0; border-radius: 3px; padding: 12px; cursor: pointer;
+  }
+  .submit[disabled] { opacity: 0.6; cursor: progress; }
+  .error { color: var(--urgent); font-weight: 500; margin: 12px 0 0; }
+
+  /* Triage slip */
+  .slip { position: relative; min-height: 420px; }
+  .empty { color: var(--ink-soft); max-width: 40ch; }
+  .stamp-line { display: flex; justify-content: space-between; align-items: start; gap: 16px; flex-wrap: wrap; }
+  .stamp {
+    --c: var(--qa);
+    display: inline-block; color: var(--c); border: 4px double var(--c); border-radius: 6px;
+    padding: 6px 18px 4px; font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 800; letter-spacing: 0.01em;
+    transform: rotate(-3deg); line-height: 1.1;
+    animation: stamp 260ms cubic-bezier(.2, 1.6, .4, 1) both;
+  }
+  .stamp.URGENT_QA { --c: var(--urgent); }
+  .stamp.HUMAN_REVIEW { --c: var(--human); }
+  @keyframes stamp { from { transform: rotate(-3deg) scale(1.35); opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .stamp { animation: none; } }
+  .stamp-note { color: var(--ink-soft); max-width: 34ch; margin: 4px 0 0; font-size: 0.9375rem; }
+  .reasons { margin: 16px 0 0; padding-left: 20px; }
+
+  .block { border-top: 1px solid var(--rule); margin-top: 20px; padding-top: 16px; }
+  .block h3 { font-size: 0.9375rem; font-weight: 600; margin: 0 0 10px; }
+  .verdict { font-size: 1.25rem; font-weight: 600; margin: 0 0 10px; }
+  .bars { display: grid; gap: 6px; }
+  .bar { display: grid; grid-template-columns: 9.5rem 1fr 3rem; gap: 10px; align-items: center; font-size: 0.875rem; }
+  .bar .track { height: 10px; background: var(--paper); border-radius: 2px; position: relative; overflow: hidden; }
+  .bar .fill { position: absolute; inset: 0 auto 0 0; background: var(--ink-soft); }
+  .bar.on .fill { background: var(--ink); }
+  .bar.on .name { font-weight: 600; }
+  .bar .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .tags .track::after { content: ""; position: absolute; left: 50%; top: -2px; bottom: -2px; border-left: 1px dashed var(--ink); }
+  .facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  @media (max-width: 520px) { .facts { grid-template-columns: 1fr; } }
+  .fact b { display: block; font-size: 1.125rem; }
+  .fact span { color: var(--ink-soft); font-size: 0.875rem; }
+  .meta { margin-top: 20px; color: var(--ink-soft); font-size: 0.8125rem; }
+  .disclaimer { margin-top: 24px; font-size: 0.875rem; color: var(--ink-soft); max-width: 60ch; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Complaint triage desk</h1>
+    <p>Paste a product complaint or attach a photo. A decision model suggests the category; fixed rules decide what is urgent. A QA reviewer confirms every result.</p>
+  </header>
+
+  <div class="grid">
+    <form class="sheet" id="form">
+      <h2>New complaint</h2>
+      <span class="field-name">Try an example</span>
+      <div class="samples" id="samples"></div>
+
+      <label for="text">What did the customer report?</label>
+      <textarea id="text" placeholder="For example: the box says 10 mg but the bottle label says 20 mg."></textarea>
+
+      <div class="row">
+        <div>
+          <label for="product">Product type</label>
+          <select id="product"><option>tablets</option><option>capsules</option><option>syrup</option></select>
+        </div>
+        <div>
+          <label for="model">Decision model</label>
+          <select id="model"></select>
+        </div>
+      </div>
+
+      <label for="file">Photo <span class="hint">(optional, PNG or JPEG)</span></label>
+      <div class="photo">
+        <input type="file" id="file" accept="image/png,image/jpeg">
+        <img id="preview" alt="Attached photo" hidden>
+        <button type="button" class="chip" id="clearPhoto" hidden>Remove photo</button>
+      </div>
+
+      <button class="submit" id="submit">Classify complaint</button>
+      <p class="error" id="error" role="alert" hidden></p>
+    </form>
+
+    <section class="sheet slip" id="slip" aria-live="polite">
+      <h2>Triage result</h2>
+      <p class="empty" id="empty">No complaint classified yet. Pick an example or describe one, then select Classify complaint.</p>
+      <div id="result" hidden></div>
+    </section>
+  </div>
+
+  <p class="disclaimer">Teaching demo with synthetic complaints. The model never decides batch safety, recalls or regulatory reporting; authorized QA staff do.</p>
+</div>
+
+<script>
+const SAMPLES = [
+  { name: "Broken tablets", product: "tablets", text: "Three tablets were broken, and the blister foil was damaged." },
+  { name: "Wrong label", product: "tablets", text: "The medicine box says 10 mg, but the label on the bottle says 20 mg." },
+  { name: "Foreign particle", product: "syrup", text: "I found a small black particle inside the medicine bottle." },
+  { name: "Missing tablets", product: "tablets", text: "There were only 8 tablets in the blister pack instead of 10." },
+  { name: "Too vague", product: "capsules", text: "Something is wrong with my pills." },
+  { name: "Photo: crushed tablet", product: "tablets", text: "", photo: "/images/broken_tablets.jpg" },
+  { name: "Photo: damaged blister", product: "tablets", text: "", photo: "/images/degraded_blister.jpg" },
+];
+const ROUTES = {
+  URGENT_QA: ["Urgent QA", "Escalate to QA now. A fixed rule or the model flagged a possible patient risk."],
+  HUMAN_REVIEW: ["Human review", "The model is unsure or the report lacks detail. A reviewer classifies it."],
+  QA_REVIEW: ["QA review", "Standard queue. A reviewer confirms the suggested classification."],
+};
+const NAMES = {
+  physical: "Physical defect", packaging: "Packaging defect", labeling: "Labeling defect",
+  contamination: "Contamination", quantity: "Quantity defect", other: "Other / unclear",
+};
+const $ = (id) => document.getElementById(id);
+let photo = "";
+
+const nice = (s) => (NAMES[s] || s.replace(/_/g, " ")).replace(/^./, (c) => c.toUpperCase());
+const pct = (p) => Math.round(p * 100) + "%";
+
+function el(tag, attrs = {}, ...kids) {
+  const n = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) k === "class" ? (n.className = v) : n.setAttribute(k, v);
+  for (const k of kids) n.append(k);
+  return n;
+}
+
+function bar(name, p, on) {
+  const fill = el("span", { class: "fill" });
+  fill.style.width = pct(p);
+  return el("div", { class: "bar" + (on ? " on" : "") },
+    el("span", { class: "name" }, name), el("span", { class: "track" }, fill), el("span", { class: "num" }, pct(p)));
+}
+
+function setPhoto(dataUrl) {
+  photo = dataUrl;
+  $("preview").hidden = $("clearPhoto").hidden = !dataUrl;
+  if (dataUrl) $("preview").src = dataUrl;
+  else $("file").value = "";
+}
+
+const toDataUrl = (blob) => new Promise((ok, fail) => {
+  const r = new FileReader(); r.onload = () => ok(r.result); r.onerror = fail; r.readAsDataURL(blob);
+});
+
+for (const s of SAMPLES) {
+  const b = el("button", { type: "button", class: "chip" }, s.name);
+  b.onclick = async () => {
+    $("text").value = s.text; $("product").value = s.product;
+    setPhoto(s.photo ? await toDataUrl(await (await fetch(s.photo)).blob()) : "");
+  };
+  $("samples").append(b);
+}
+
+$("file").onchange = async (e) => {
+  const f = e.target.files[0];
+  if (!f) return setPhoto("");
+  if (f.size > 6e6) { showError("Photo too large. Use one under 6 MB."); return setPhoto(""); }
+  setPhoto(await toDataUrl(f));
+};
+$("clearPhoto").onclick = () => setPhoto("");
+
+fetch("/api/models").then((r) => r.json()).then(({ models, default: d }) => {
+  for (const m of models) $("model").append(el("option", { value: m }, m + (m === d ? " (recommended)" : "")));
+  $("model").value = d;
+});
+
+function showError(msg) { $("error").textContent = msg; $("error").hidden = !msg; }
+
+$("form").onsubmit = async (e) => {
+  e.preventDefault();
+  showError("");
+  const text = $("text").value.trim();
+  if (!text && !photo) return showError("Describe the complaint or add a photo.");
+  $("submit").disabled = true; $("submit").textContent = "Classifying…";
+  try {
+    const res = await fetch("/api/classify", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text, product_type: $("product").value, model: $("model").value, image: photo }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || "The server returned " + res.status + ".");
+    render(data);
+  } catch (err) {
+    showError(err.message);
+  } finally {
+    $("submit").disabled = false; $("submit").textContent = "Classify complaint";
+  }
+};
+
+function render(d) {
+  const a = d.answers, out = $("result");
+  const [title, note] = ROUTES[d.route];
+  out.replaceChildren();
+  out.append(el("div", { class: "stamp-line" },
+    el("span", { class: "stamp " + d.route }, title), el("p", { class: "stamp-note" }, note)));
+  if (d.reasons.length) out.append(el("ul", { class: "reasons" }, ...d.reasons.map((r) => el("li", {}, r))));
+
+  const refused = (q) => !a[q] || a[q].type === "refusal";
+  const cat = a.primary_category;
+  const catBlock = el("div", { class: "block" }, el("h3", {}, "Suggested category"));
+  if (refused("primary_category")) catBlock.append(el("p", {}, "The model declined this question."));
+  else {
+    const sub = refused("subcategory") ? "" : " — " + nice(a.subcategory.choice);
+    catBlock.append(el("p", { class: "verdict" }, nice(cat.choice) + sub));
+    const probs = Object.entries(cat.probabilities || { [cat.choice]: cat.confidence ?? 1 }).sort((x, y) => y[1] - x[1]).slice(0, 4);
+    catBlock.append(el("div", { class: "bars" }, ...probs.map(([k, p]) => bar(nice(k), p, k === cat.choice))));
+  }
+  out.append(catBlock);
+
+  const tagKeys = Object.keys(a).filter((k) => k.startsWith("tag_") && !refused(k));
+  out.append(el("div", { class: "block" },
+    el("h3", {}, "Also applies? (dashed line marks the 50% threshold)"),
+    el("div", { class: "bars tags" }, ...tagKeys.map((k) => bar(nice(k.slice(4)), a[k].noul, a[k].noul >= 0.5)))));
+
+  const levels = ["Minor", "Major", "Critical"];
+  const sev = refused("severity") ? null : a.severity.score;
+  const fact = (v, label) => el("div", { class: "fact" }, el("b", {}, v), el("span", {}, label));
+  out.append(el("div", { class: "block facts" },
+    fact(sev == null ? "n/a" : levels[Math.round(sev)] + " (" + sev.toFixed(1) + ")", "Potential impact"),
+    fact(refused("sufficient_info") ? "n/a" : (a.sufficient_info.noul >= 0.5 ? "Yes" : "No") + " (" + pct(a.sufficient_info.noul) + ")", "Enough detail to classify"),
+    fact(refused("adverse_event") ? "n/a" : (a.adverse_event.noul >= 0.5 ? "Yes" : "No") + " (" + pct(a.adverse_event.noul) + ")", "Patient reaction mentioned")));
+
+  out.append(el("p", { class: "meta" },
+    "Answered by " + d.model + (d.fallback ? " (fallback, the selected model failed)" : "") +
+    " in " + d.ms + " ms, cost $" + (d.cost ?? 0).toFixed(6) + "."));
+  $("empty").hidden = true; out.hidden = false;
+}
+</script>
+</body>
+</html>

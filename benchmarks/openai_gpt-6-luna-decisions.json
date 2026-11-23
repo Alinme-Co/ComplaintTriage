@@ -1,0 +1,4082 @@
+[
+ {
+  "complaint_id": "PC-2026-001",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "physical",
+    "probabilities": {
+     "physical": 1,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "broken_tablets",
+    "probabilities": {
+     "broken_tablets": 0.98,
+     "discoloration": 0.01,
+     "unusual_odor": 0.01,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 0.98
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.01,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.99,
+     "2": 0.01
+    },
+    "confidence": 0.99
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.07
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0.01
+   }
+  },
+  "usage": {
+   "input_tokens": 1916,
+   "output_tokens": 0,
+   "cost": 0.0001916,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001916,
+    "upstream_inference_prompt_cost": 0.0001916,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646100-0I4ysYXcHcGoeEyaEF5e",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-002",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "physical",
+    "probabilities": {
+     "physical": 0.94,
+     "packaging": 0.05,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0.01,
+     "other": 0
+    },
+    "confidence": 0.93
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "broken_tablets",
+    "probabilities": {
+     "broken_tablets": 0.98,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0.02,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 0.98
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0.98
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.01,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.99,
+     "2": 0.01
+    },
+    "confidence": 0.99
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1913,
+   "output_tokens": 0,
+   "cost": 0.0001913,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001913,
+    "upstream_inference_prompt_cost": 0.0001913,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646100-GoWKBbgsUsBYq5LXw9bv",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-003",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "physical",
+    "probabilities": {
+     "physical": 0.99,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0.01,
+     "other": 0
+    },
+    "confidence": 0.99
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "discoloration",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 1,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0.95
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.82,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.19,
+     "1": 0.8,
+     "2": 0.01
+    },
+    "confidence": 0.7
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1912,
+   "output_tokens": 0,
+   "cost": 0.0001912,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001912,
+    "upstream_inference_prompt_cost": 0.0001912,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646100-f34A4CpdyFQ4JYJGeamv",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-004",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "physical",
+    "probabilities": {
+     "physical": 1,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "unusual_odor",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 1,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0.98
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.19,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.73,
+     "2": 0.23
+    },
+    "confidence": 0.6
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.16
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0.91
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1911,
+   "output_tokens": 0,
+   "cost": 0.0001911,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001911,
+    "upstream_inference_prompt_cost": 0.0001911,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646100-xkqlDKyYh4NdGPln4B7Q",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-005",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "physical",
+    "probabilities": {
+     "physical": 1,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "abnormal_texture",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 1,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0.98
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.98,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.98,
+     "2": 0
+    },
+    "confidence": 0.97
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0.84
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1909,
+   "output_tokens": 0,
+   "cost": 0.0001909,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001909,
+    "upstream_inference_prompt_cost": 0.0001909,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646100-2i0np0Q41VSbYLEJFPVQ",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-006",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "physical",
+    "probabilities": {
+     "physical": 1,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "abnormal_texture",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 1,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.99,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.99,
+     "2": 0
+    },
+    "confidence": 0.99
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0.37
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1910,
+   "output_tokens": 0,
+   "cost": 0.000191,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.000191,
+    "upstream_inference_prompt_cost": 0.000191,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646100-13VvWPIVw0yC6vn2vgnm",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-007",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "physical",
+    "probabilities": {
+     "physical": 1,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "broken_tablets",
+    "probabilities": {
+     "broken_tablets": 1,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 1,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.12
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1914,
+   "output_tokens": 0,
+   "cost": 0.0001914,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001914,
+    "upstream_inference_prompt_cost": 0.0001914,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646100-CBKe8rawNcUqhGJBj3rU",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-008",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "physical",
+    "probabilities": {
+     "physical": 1,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "discoloration",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 1,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.85,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.16,
+     "1": 0.83,
+     "2": 0.01
+    },
+    "confidence": 0.74
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0.05
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1911,
+   "output_tokens": 0,
+   "cost": 0.0001911,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001911,
+    "upstream_inference_prompt_cost": 0.0001911,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646100-SEgXmk9LLTM2IZtST2tb",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-009",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "packaging",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 1,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "leaking_bottle",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 1,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.97,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.95,
+     "2": 0.01
+    },
+    "confidence": 0.93
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0.04
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1912,
+   "output_tokens": 0,
+   "cost": 0.0001912,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001912,
+    "upstream_inference_prompt_cost": 0.0001912,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646101-sDZXPZAGKKvWDoP7rtWP",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-010",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "packaging",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 1,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "damaged_blister",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 1,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.02,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.98,
+     "2": 0.02
+    },
+    "confidence": 0.97
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0.01
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0.05
+   }
+  },
+  "usage": {
+   "input_tokens": 1915,
+   "output_tokens": 0,
+   "cost": 0.0001915,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001915,
+    "upstream_inference_prompt_cost": 0.0001915,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646101-XsI361izA2TmCfQg1k11",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-011",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "packaging",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 1,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "broken_seal",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 1,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0.96
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.06,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.92,
+     "2": 0.07
+    },
+    "confidence": 0.88
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0.62
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0.07
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1913,
+   "output_tokens": 0,
+   "cost": 0.0001913,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001913,
+    "upstream_inference_prompt_cost": 0.0001913,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646101-jN5f6wSJqwXuNvYXThkc",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-012",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "packaging",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0.95,
+     "labeling": 0.03,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0.02
+    },
+    "confidence": 0.94
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "incorrect_packaging",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 1,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.36,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.64,
+     "2": 0.36
+    },
+    "confidence": 0.46
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0.9
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0.01
+   }
+  },
+  "usage": {
+   "input_tokens": 1916,
+   "output_tokens": 0,
+   "cost": 0.0001916,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001916,
+    "upstream_inference_prompt_cost": 0.0001916,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646101-gILh65YPUvY5Cz3ZVK7e",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-013",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "packaging",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 1,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "damaged_closure",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 1,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0.99
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.97,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.04,
+     "1": 0.95,
+     "2": 0.01
+    },
+    "confidence": 0.93
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1910,
+   "output_tokens": 0,
+   "cost": 0.000191,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.000191,
+    "upstream_inference_prompt_cost": 0.000191,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646101-9bCeVKw7X4I0SnfVwrsh",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-014",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "packaging",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 1,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "damaged_blister",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0.99,
+     "leaking_bottle": 0,
+     "broken_seal": 0.01,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 0.99
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0.95
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 1,
+     "2": 0
+    },
+    "confidence": 1
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0.01
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1909,
+   "output_tokens": 0,
+   "cost": 0.0001909,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001909,
+    "upstream_inference_prompt_cost": 0.0001909,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646101-k4AsCHkhczgfTdGucDxK",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-015",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "packaging",
+    "probabilities": {
+     "physical": 0.01,
+     "packaging": 0.97,
+     "labeling": 0,
+     "contamination": 0.01,
+     "quantity": 0.01,
+     "other": 0
+    },
+    "confidence": 0.96
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "leaking_bottle",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 1,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.08,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.9,
+     "2": 0.09
+    },
+    "confidence": 0.85
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0.95
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0.61
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1920,
+   "output_tokens": 0,
+   "cost": 0.000192,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.000192,
+    "upstream_inference_prompt_cost": 0.000192,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646101-dR7gJd2FXK55AiidcNw7",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-016",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "labeling",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0,
+     "labeling": 1,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "wrong_strength",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 1,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.86,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.14,
+     "2": 0.86
+    },
+    "confidence": 0.79
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.71
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0.99
+   }
+  },
+  "usage": {
+   "input_tokens": 1917,
+   "output_tokens": 0,
+   "cost": 0.0001917,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001917,
+    "upstream_inference_prompt_cost": 0.0001917,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646101-TZ6ceQEMqcMW7DAiLpxV",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-017",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "labeling",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0,
+     "labeling": 1,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "missing_expiry",
+    "probabilities": {
+     "broken_tablets": 0.01,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0.98,
+     "incorrect_instructions": 0.01,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 0.98
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0.99
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.99,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.97,
+     "2": 0.01
+    },
+    "confidence": 0.96
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.98
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1912,
+   "output_tokens": 0,
+   "cost": 0.0001912,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001912,
+    "upstream_inference_prompt_cost": 0.0001912,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646102-3vv5DEOQd25o4afDf7BO",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-018",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "labeling",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0,
+     "labeling": 1,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "incorrect_instructions",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 1,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.41,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.59,
+     "2": 0.41
+    },
+    "confidence": 0.39
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 1
+   }
+  },
+  "usage": {
+   "input_tokens": 1918,
+   "output_tokens": 0,
+   "cost": 0.0001918,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001918,
+    "upstream_inference_prompt_cost": 0.0001918,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646102-ZJfzVXwp8Wsh6WxcPeAx",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-019",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "labeling",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0.01,
+     "labeling": 0.99,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 0.99
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "unreadable_label",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 1,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.7,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.31,
+     "1": 0.68,
+     "2": 0.01
+    },
+    "confidence": 0.52
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.98
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1915,
+   "output_tokens": 0,
+   "cost": 0.0001915,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001915,
+    "upstream_inference_prompt_cost": 0.0001915,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646102-SejDshbpxbuqDboWvMin",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-020",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "labeling",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0,
+     "labeling": 1,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "wrong_strength",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 1,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.72,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.28,
+     "2": 0.72
+    },
+    "confidence": 0.58
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.99
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0.01
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 1
+   }
+  },
+  "usage": {
+   "input_tokens": 1917,
+   "output_tokens": 0,
+   "cost": 0.0001917,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001917,
+    "upstream_inference_prompt_cost": 0.0001917,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646102-cOxhIvESvrdfdQOGIID2",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-021",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "labeling",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0,
+     "labeling": 0.99,
+     "contamination": 0.01,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 0.99
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "incorrect_instructions",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0.97,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0.03
+    },
+    "confidence": 0.97
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.98,
+     "2": 0.01
+    },
+    "confidence": 0.97
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1911,
+   "output_tokens": 0,
+   "cost": 0.0001911,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001911,
+    "upstream_inference_prompt_cost": 0.0001911,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646102-rckBH0vw4cYobIXM1tHQ",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-022",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "contamination",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0,
+     "labeling": 0.01,
+     "contamination": 0.99,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 0.99
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "foreign_particle",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 1,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.99,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.01,
+     "2": 0.99
+    },
+    "confidence": 0.99
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.13
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1909,
+   "output_tokens": 0,
+   "cost": 0.0001909,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001909,
+    "upstream_inference_prompt_cost": 0.0001909,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646102-QYoAu0rAWP8bc6qlMSYQ",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-023",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "contamination",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 1,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "foreign_particle",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0.01,
+     "foreign_particle": 0.99,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 0.99
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.53,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.45,
+     "2": 0.54
+    },
+    "confidence": 0.29
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0.95
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1908,
+   "output_tokens": 0,
+   "cost": 0.0001908,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001908,
+    "upstream_inference_prompt_cost": 0.0001908,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646102-TXxnMYJLdjtja8XI70x7",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-024",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "contamination",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 1,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "suspected_microbial",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0.01,
+     "suspected_microbial": 0.98,
+     "unexpected_residue": 0.01,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 0.98
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0.98
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.98,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.02,
+     "2": 0.98
+    },
+    "confidence": 0.97
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.12
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1914,
+   "output_tokens": 0,
+   "cost": 0.0001914,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001914,
+    "upstream_inference_prompt_cost": 0.0001914,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646102-8kSt2ncx53OmoXFjlU74",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-025",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "physical",
+    "probabilities": {
+     "physical": 0.71,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 0.29,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 0.65
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "unexpected_residue",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0.01,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0.99,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 0.99
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.99,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.97,
+     "2": 0.01
+    },
+    "confidence": 0.96
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0.99
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.19
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1914,
+   "output_tokens": 0,
+   "cost": 0.0001914,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001914,
+    "upstream_inference_prompt_cost": 0.0001914,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646103-CBu3kEBh8enVvxRaphso",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-026",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "contamination",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 1,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "foreign_particle",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 1,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.99,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.01,
+     "2": 0.99
+    },
+    "confidence": 0.99
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0.91
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.84
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1917,
+   "output_tokens": 0,
+   "cost": 0.0001917,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001917,
+    "upstream_inference_prompt_cost": 0.0001917,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646103-nYLOrTZVVlhdnTxmx0pk",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-027",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "contamination",
+    "probabilities": {
+     "physical": 0.15,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 0.85,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 0.82
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "foreign_particle",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 1,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 2,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    },
+    "confidence": 1
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1914,
+   "output_tokens": 0,
+   "cost": 0.0001914,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001914,
+    "upstream_inference_prompt_cost": 0.0001914,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646103-Fma0apVDevOKPlL0wly1",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-028",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "quantity",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 1,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "missing_tablets",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 1,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.01,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.99,
+     "2": 0.01
+    },
+    "confidence": 0.99
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.95
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 1
+   }
+  },
+  "usage": {
+   "input_tokens": 1913,
+   "output_tokens": 0,
+   "cost": 0.0001913,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001913,
+    "upstream_inference_prompt_cost": 0.0001913,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646103-6SrBN1c31OvLTYJVQc8B",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-029",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "quantity",
+    "probabilities": {
+     "physical": 0.01,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0.98,
+     "other": 0.01
+    },
+    "confidence": 0.98
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "incorrect_fill",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 1,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.89,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.12,
+     "1": 0.87,
+     "2": 0.01
+    },
+    "confidence": 0.81
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.83
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0.76
+   }
+  },
+  "usage": {
+   "input_tokens": 1910,
+   "output_tokens": 0,
+   "cost": 0.000191,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.000191,
+    "upstream_inference_prompt_cost": 0.000191,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646103-aFXKfdVOjJQMXpsbqDP3",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-030",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "quantity",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0.99,
+     "other": 0.01
+    },
+    "confidence": 0.99
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "incomplete_package",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0.03,
+     "incorrect_fill": 0,
+     "incomplete_package": 0.97,
+     "other": 0
+    },
+    "confidence": 0.97
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0.99
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.84,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.17,
+     "1": 0.82,
+     "2": 0.01
+    },
+    "confidence": 0.73
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.92
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0.01
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 1
+   }
+  },
+  "usage": {
+   "input_tokens": 1912,
+   "output_tokens": 0,
+   "cost": 0.0001912,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001912,
+    "upstream_inference_prompt_cost": 0.0001912,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646103-MUTamFpe9H2xOE27w936",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-031",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "quantity",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0.07,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0.93,
+     "other": 0
+    },
+    "confidence": 0.92
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "missing_tablets",
+    "probabilities": {
+     "broken_tablets": 0.01,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0.03,
+     "leaking_bottle": 0,
+     "broken_seal": 0.01,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0.01,
+     "missing_tablets": 0.81,
+     "incorrect_fill": 0,
+     "incomplete_package": 0.02,
+     "other": 0.11
+    },
+    "confidence": 0.8
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0.98
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.01,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.99,
+     "2": 0.01
+    },
+    "confidence": 0.99
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.99
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0.98
+   }
+  },
+  "usage": {
+   "input_tokens": 1906,
+   "output_tokens": 0,
+   "cost": 0.0001906,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001906,
+    "upstream_inference_prompt_cost": 0.0001906,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646103-uSl6PwB7tffwXUOsK7qx",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-032",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "quantity",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0.2,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0.69,
+     "other": 0.11
+    },
+    "confidence": 0.63
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "incomplete_package",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0.01,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0.84,
+     "other": 0.15
+    },
+    "confidence": 0.83
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.72,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.28,
+     "1": 0.72,
+     "2": 0
+    },
+    "confidence": 0.58
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.38
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 1
+   }
+  },
+  "usage": {
+   "input_tokens": 1913,
+   "output_tokens": 0,
+   "cost": 0.0001913,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001913,
+    "upstream_inference_prompt_cost": 0.0001913,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646104-4n2bAjuY0yZM5cgzgjoR",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-033",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "physical",
+    "probabilities": {
+     "physical": 0.8,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0.2
+    },
+    "confidence": 0.76
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "other",
+    "probabilities": {
+     "broken_tablets": 0.01,
+     "discoloration": 0.2,
+     "unusual_odor": 0.01,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0.01,
+     "missing_expiry": 0.01,
+     "incorrect_instructions": 0.01,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0.75
+    },
+    "confidence": 0.74
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0.78
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.02,
+     "1": 0.96,
+     "2": 0.02
+    },
+    "confidence": 0.94
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0.18
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0.08
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1908,
+   "output_tokens": 0,
+   "cost": 0.0001908,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001908,
+    "upstream_inference_prompt_cost": 0.0001908,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646104-mIAOt8CJcUfr0Iy8f7dl",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-034",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "other",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 1
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "other",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 1
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.85,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.17,
+     "1": 0.81,
+     "2": 0.02
+    },
+    "confidence": 0.72
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0.1
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.01
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0.18
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1902,
+   "output_tokens": 0,
+   "cost": 0.0001902,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001902,
+    "upstream_inference_prompt_cost": 0.0001902,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646104-IziLOGzQlQDnTErfYpbp",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-035",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "other",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 1
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "other",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 1
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0.01
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.03,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.97,
+     "1": 0.03,
+     "2": 0
+    },
+    "confidence": 0.96
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1905,
+   "output_tokens": 0,
+   "cost": 0.0001905,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001905,
+    "upstream_inference_prompt_cost": 0.0001905,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646104-gKWMmlNBFh7RioEeGHFA",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-036",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "physical",
+    "probabilities": {
+     "physical": 0.96,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0.01,
+     "other": 0.03
+    },
+    "confidence": 0.95
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "unusual_odor",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 1,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 1
+   },
+   "severity": {
+    "type": "score",
+    "score": 2,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0,
+     "2": 1
+    },
+    "confidence": 1
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0.55
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1919,
+   "output_tokens": 0,
+   "cost": 0.0001919,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001919,
+    "upstream_inference_prompt_cost": 0.0001919,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646104-0BGC6RXCOnk1g36dvZxA",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-037",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "other",
+    "probabilities": {
+     "physical": 0,
+     "packaging": 0,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 1
+    },
+    "confidence": 1
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "other",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 1
+    },
+    "confidence": 1
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0.87
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 0.03,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.97,
+     "1": 0.03,
+     "2": 0
+    },
+    "confidence": 0.96
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1911,
+   "output_tokens": 0,
+   "cost": 0.0001911,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001911,
+    "upstream_inference_prompt_cost": 0.0001911,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646104-pY9yBI1h8AevGZmbqXl1",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-038",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "quantity",
+    "probabilities": {
+     "physical": 0.03,
+     "packaging": 0.02,
+     "labeling": 0,
+     "contamination": 0,
+     "quantity": 0.95,
+     "other": 0
+    },
+    "confidence": 0.94
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "missing_tablets",
+    "probabilities": {
+     "broken_tablets": 0.17,
+     "discoloration": 0,
+     "unusual_odor": 0.01,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0.01,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0.81,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 0.8
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 1
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.01,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.99,
+     "2": 0.01
+    },
+    "confidence": 0.99
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0.02
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0.99
+   }
+  },
+  "usage": {
+   "input_tokens": 1922,
+   "output_tokens": 0,
+   "cost": 0.0001922,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001922,
+    "upstream_inference_prompt_cost": 0.0001922,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646104-lS5f7Uqx8fqHzqiYe5wc",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-039",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "physical",
+    "probabilities": {
+     "physical": 0.84,
+     "packaging": 0,
+     "labeling": 0.16,
+     "contamination": 0,
+     "quantity": 0,
+     "other": 0
+    },
+    "confidence": 0.81
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "discoloration",
+    "probabilities": {
+     "broken_tablets": 0,
+     "discoloration": 0.55,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0,
+     "broken_seal": 0,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0.45,
+     "foreign_particle": 0,
+     "suspected_microbial": 0,
+     "unexpected_residue": 0,
+     "missing_tablets": 0,
+     "incorrect_fill": 0,
+     "incomplete_package": 0,
+     "other": 0
+    },
+    "confidence": 0.53
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0.97
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.01,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0.01,
+     "1": 0.97,
+     "2": 0.02
+    },
+    "confidence": 0.96
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0.99
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 0.3
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 0.07
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1915,
+   "output_tokens": 0,
+   "cost": 0.0001915,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001915,
+    "upstream_inference_prompt_cost": 0.0001915,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646104-9TLsW8WQoG1NmsEyWf5C",
+  "provider": "OpenAI"
+ },
+ {
+  "complaint_id": "PC-2026-040",
+  "model": "openai/gpt-6-luna-decisions-20261006",
+  "answers": {
+   "primary_category": {
+    "type": "choice",
+    "choice": "contamination",
+    "probabilities": {
+     "physical": 0.02,
+     "packaging": 0.38,
+     "labeling": 0.01,
+     "contamination": 0.57,
+     "quantity": 0.01,
+     "other": 0.01
+    },
+    "confidence": 0.48
+   },
+   "subcategory": {
+    "type": "choice",
+    "choice": "broken_seal",
+    "probabilities": {
+     "broken_tablets": 0.01,
+     "discoloration": 0,
+     "unusual_odor": 0,
+     "abnormal_texture": 0,
+     "damaged_blister": 0,
+     "leaking_bottle": 0.01,
+     "broken_seal": 0.75,
+     "damaged_closure": 0,
+     "incorrect_packaging": 0,
+     "wrong_strength": 0,
+     "missing_expiry": 0,
+     "incorrect_instructions": 0,
+     "unreadable_label": 0,
+     "foreign_particle": 0.01,
+     "suspected_microbial": 0.01,
+     "unexpected_residue": 0.18,
+     "missing_tablets": 0.01,
+     "incorrect_fill": 0.01,
+     "incomplete_package": 0,
+     "other": 0.01
+    },
+    "confidence": 0.74
+   },
+   "sufficient_info": {
+    "type": "noul",
+    "noul": 0.98
+   },
+   "adverse_event": {
+    "type": "noul",
+    "noul": 0
+   },
+   "severity": {
+    "type": "score",
+    "score": 1.99,
+    "legend": {
+     "0": "Minor: cosmetic or convenience issue, no plausible effect on the dose or patient.",
+     "1": "Major: could affect dose, quality or correct use.",
+     "2": "Critical: could directly harm a patient (wrong strength, contamination, reaction reported)."
+    },
+    "probabilities": {
+     "0": 0,
+     "1": 0.01,
+     "2": 0.99
+    },
+    "confidence": 0.99
+   },
+   "tag_physical": {
+    "type": "noul",
+    "noul": 0.93
+   },
+   "tag_packaging": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_labeling": {
+    "type": "noul",
+    "noul": 0
+   },
+   "tag_contamination": {
+    "type": "noul",
+    "noul": 1
+   },
+   "tag_quantity": {
+    "type": "noul",
+    "noul": 0
+   }
+  },
+  "usage": {
+   "input_tokens": 1916,
+   "output_tokens": 0,
+   "cost": 0.0001916,
+   "is_byok": false,
+   "cost_details": {
+    "upstream_inference_cost": 0.0001916,
+    "upstream_inference_prompt_cost": 0.0001916,
+    "upstream_inference_completions_cost": 0
+   }
+  },
+  "id": "gen-dec-1794646105-w0AqEphBiYsNvtVonp2D",
+  "provider": "OpenAI"
+ }
+]
